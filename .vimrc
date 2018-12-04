@@ -210,6 +210,7 @@ call plug#end()
     if WINDOWS()
         nnoremap <leader>b :AsyncRun build.bat<cr>
         nnoremap <leader>r :AsyncRun run.bat<cr>
+		nmap <leader>y :AsyncRun y.bat <c-r><c-w><cr>
     else
         nnoremap <leader>b :AsyncRun ./build.sh<cr>
         nnoremap <leader>r :AsyncRun ./run.sh<cr>
@@ -298,7 +299,8 @@ call plug#end()
             elseif OSX() && has("gui_running")
                 set guifont=Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
             elseif WINDOWS() && has("gui_running")
-                set guifont=Lucida_Console:h12,Andale_Mono:h12,Menlo:h12,Consolas:h12,Courier_New:h12
+				set rop=type:directx,renmode:5
+                set guifont=Consolas:h12,Lucida_Console:h12,Andale_Mono:h12,Menlo:h12,Courier_New:h12
             endif
         endif
     else
@@ -451,3 +453,10 @@ let g:spf13_noninvasive_completion = 1
 "{ snippets-disable
 "    g:neosnippet#disable_runtime_snippets()
 "}
+"
+
+
+
+
+
+colorscheme solarized
