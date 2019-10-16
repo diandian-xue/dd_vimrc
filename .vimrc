@@ -208,12 +208,11 @@ call plug#end()
     set completeopt=menu,preview,longest
 
     if WINDOWS()
-        nnoremap <leader>b :AsyncRun build.bat<cr>
         nnoremap <leader>r :AsyncRun run.bat<cr>
-		nmap <leader>y :AsyncRun y.bat <c-r><c-w><cr>
+        nnoremap <leader>b :AsyncRun build.bat<cr>
     else
-        nnoremap <leader>b :AsyncRun ./build.sh<cr>
-        nnoremap <leader>r :AsyncRun ./run.sh<cr>
+        nnoremap <leader>r :AsyncRun make run<cr>
+        nnoremap <leader>b :AsyncRun make<cr>
     endif
     nnoremap <leader>c :AsyncStop<cr>
 
