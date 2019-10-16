@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/mnt/c/Users/diandian/Documents/project/greedy_warriors/server/services/player'
-let g:netrw_dirhist_2='/mnt/f/work/mear/发行/soul_hunter/webhook_server/.git'
